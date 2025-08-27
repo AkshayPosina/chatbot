@@ -2,8 +2,6 @@ import type { FC } from "react";
 import {
   ThreadListItemPrimitive,
   ThreadListPrimitive,
-  unstable_useCloudThreadListAdapter,
-  useAssistantRuntime,
 } from "@assistant-ui/react";
 import { ArchiveIcon, PlusIcon } from "lucide-react";
 
@@ -26,15 +24,13 @@ const ThreadListNew: FC = () => {
         <PlusIcon />
         New Thread
       </Button>
-    </ThreadListPrimitive.New> 
+    </ThreadListPrimitive.New>
   );
 };
 
+// SIMPLIFIED THIS COMPONENT
 const ThreadListItems: FC = () => {
-  const runtime = useAssistantRuntime();
-  // Pass an object with a runtime property instead of the runtime directly
-  const adapter = unstable_useCloudThreadListAdapter({ runtime }); 
-  return <ThreadListPrimitive.Items {...adapter} components={{ ThreadListItem }} />;
+  return <ThreadListPrimitive.Items components={{ ThreadListItem }} />;
 };
 
 const ThreadListItem: FC = () => {
@@ -48,4 +44,24 @@ const ThreadListItem: FC = () => {
   );
 };
 
-const ThreadListItemTitle: FC
+const ThreadListItemTitle: FC = () => {
+  return (
+    <p className="text-sm">
+      <ThreadListItemPrimitive.Title fallback="New Chat" />
+    </p>
+  );
+};
+
+const ThreadListItemArchive: FC = () => {
+  return (
+    <ThreadListItemPrimitive.Archive asChild>
+      <TooltipIconButton
+        className="hover:text-foreground/60 p-4 text-foreground ml-auto mr-1 size-4"
+        variant="ghost"
+        tooltip="Archive thread"
+      >
+        <ArchiveIcon />
+      </TooltipIconButton>
+    </ThreadListItemPrimitive.Archive>
+  );
+};
