@@ -26,7 +26,7 @@ const ThreadListNew: FC = () => {
         <PlusIcon />
         New Thread
       </Button>
-    </ThreadListPrimitive.New>.
+    </ThreadListPrimitive.New> 
   );
 };
 
@@ -48,24 +48,4 @@ const ThreadListItem: FC = () => {
   );
 };
 
-const ThreadListItemTitle: FC = () => {
-  return (
-    <p className="text-sm">
-      <ThreadListItemPrimitive.Title fallback="New Chat" />
-    </p>
-  );
-};
-
-const ThreadListItemArchive: FC = () => {
-  return (
-    <ThreadListItemPrimitive.Archive asChild>
-      <TooltipIconButton
-        className="hover:text-foreground/60 p-4 text-foreground ml-auto mr-1 size-4"
-        variant="ghost"
-        tooltip="Archive thread"
-      >
-        <ArchiveIcon />
-      </TooltipIconButton>
-    </ThreadListItemPrimitive.Archive>
-  );
-};
+const ThreadListItemTitle: FC
