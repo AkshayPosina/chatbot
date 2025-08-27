@@ -11,9 +11,9 @@
   "dependencies": {
     "@ai-sdk/google": "^2.0.11",
     "@ai-sdk/openai": "^2.0.10",
-    "@assistant-ui/react": "^0.11.5",
-    "@assistant-ui/react-ai-sdk": "^0.11.5",
-    "@assistant-ui/react-markdown": "^0.10.8",
+    "@assistant-ui/react": "^0.10.43",
+    "@assistant-ui/react-ai-sdk": "^0.10.37",
+    "@assistant-ui/react-markdown": "^0.10.9",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
