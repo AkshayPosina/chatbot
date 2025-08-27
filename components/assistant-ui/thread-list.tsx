@@ -2,6 +2,7 @@ import type { FC } from "react";
 import {
   ThreadListItemPrimitive,
   ThreadListPrimitive,
+  unstable_useCloudThreadListAdapter, // ADD THIS LINE
 } from "@assistant-ui/react";
 import { ArchiveIcon, PlusIcon } from "lucide-react";
 
@@ -28,8 +29,10 @@ const ThreadListNew: FC = () => {
   );
 };
 
+// MODIFY THIS PART
 const ThreadListItems: FC = () => {
-  return <ThreadListPrimitive.Items components={{ ThreadListItem }} />;
+  const adapter = unstable_useCloudThreadListAdapter();
+  return <ThreadListPrimitive.Items {...adapter} components={{ ThreadListItem }} />;
 };
 
 const ThreadListItem: FC = () => {
