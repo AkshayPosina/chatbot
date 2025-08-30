@@ -13,10 +13,8 @@ import { Separator } from "@/components/ui/separator";
 import {
   Breadcrumb,
   BreadcrumbItem,
-  BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
 export const Assistant = () => {
@@ -33,10 +31,8 @@ export const Assistant = () => {
               <Separator orientation="vertical" className="mr-2 h-4" />
               <Breadcrumb>
                 <BreadcrumbList>
-                  {/* REMOVED the "Build Your Own ChatGPT UX" link and separator */}
                   <BreadcrumbItem>
-                    {/* CHANGED the text to "Akshay's Template" */}
-                    <BreadcrumbPage>Akshay's Template</BreadcrumbPage>
+                    <BreadcrumbPage>Akshay&apos;s Template</BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
