@@ -50,7 +50,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <span className="">View Source</span>
                 </div>
               </Link>
-            </SidebarMenuButton> // a test comment
+            </SidebarMenuButton> {/* This is a test comment */}
             
           </SidebarMenuItem>
         </SidebarMenu>
