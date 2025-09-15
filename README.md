@@ -13,8 +13,15 @@ A web-based chatbot built with Next.js and the Vercel AI SDK, powered by Google'
 
 - **Real-time Streaming:** AI responses are streamed in real-time for a natural conversational flow.
 - **Conversation History:** All chat threads are saved and can be revisited from the sidebar.
-- **Responsive Design:** The user interface is fully responsive and works on both desktop and mobile devices.
-- **Cloud Deployment:** Deployed on the Vercel Edge Network for high performance and availability.
+- **Responsive Design:** The user interface is fully responsive and works on both desktop and mobile
+
+## ⚡ Performance
+
+This application is designed for speed, leveraging the best features of its technology stack.
+
+> **Next.js Framework:** Utilizes Server-Side Rendering (SSR) and automatic code-splitting to ensure fast initial page loads and a responsive user experience.
+>
+> **Vercel Edge Network:** Deployed globally on Vercel's Edge Network, content is served from the data center closest to the user, minimizing latency worldwide.
 
 ---
 
@@ -31,4 +38,34 @@ A web-based chatbot built with Next.js and the Vercel AI SDK, powered by Google'
 
 ---
 
-##
+## 🏁 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- pnpm (or your preferred package manager)
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/AkshayPosina/chatbot.git](https://github.com/AkshayPosina/chatbot.git)
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd chatbot
+    ```
+3.  Install the dependencies:
+    ```bash
+    pnpm install
+    ```
+4.  Create a `.env.local` file in the root of your project and add your API key:
+    ```
+    GOOGLE_GENERATIVE_AI_API_KEY=your_api_key_here
+    ```
+5.  Run the development server:
+    ```bash
+    pnpm dev
+    ```
