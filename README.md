@@ -5,7 +5,6 @@
 
 A web-based chatbot built with Next.js and the Vercel AI SDK, powered by Google's Gemini model. This project serves as a demonstration of building a modern, streaming AI interface with a clean and responsive design.
 
-![Chatbot Screenshot](https://user-images.githubusercontent.com/your-username/your-repo/your-screenshot.png) 
 *<p align="center">A live demo is available at: [chatbot-djnu.vercel.app](https://chatbot-djnu.vercel.app/)</p>*
 
 ---
@@ -32,34 +31,4 @@ A web-based chatbot built with Next.js and the Vercel AI SDK, powered by Google'
 
 ---
 
-## 🏁 Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-- Node.js (v18 or later)
-- pnpm (or your preferred package manager)
-
-### Installation
-
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/AkshayPosina/chatbot.git](https://github.com/AkshayPosina/chatbot.git)
-    ```
-2.  Navigate to the project directory:
-    ```bash
-    cd chatbot
-    ```
-3.  Install the dependencies:
-    ```bash
-    pnpm install
-    ```
-4.  Create a `.env.local` file in the root of your project and add your API key:
-    ```
-    GOOGLE_GENERATIVE_AI_API_KEY=your_api_key_here
-    ```
-5.  Run the development server:
-    ```bash
-    pnpm dev
-    ```
+##
